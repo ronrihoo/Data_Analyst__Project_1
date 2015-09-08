@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="utf-8" />
-<title>ABCD</title>
+<title>ABCD-Copy1</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -202,12 +202,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 
-<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s">&#39;Project_1__Diagram_1.png&#39;</span><span class="p">)</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s">&#39;Project_1__Figure_1.png&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -218,7 +218,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
 
 
 <div class="output_png output_subarea output_execute_result">
@@ -836,7 +836,7 @@ YZy4AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The statistical test that I have planned to use is the dependent samples, one-tailed t-test. The two conditions are dependent on the same person carrying them out. The result for each condition has to be from the same person, or we won't get the correct average difference from each participant. Many are just better at performing both tasks than others. Some participants' slowest time could be faster than some other participants' fastest time, which means that if we mixed their results, we'd have useless, imaginary data. It may even be that some participants will perform faster with the incongruent list (that's part of what we're testing to see). The one-tailed test will be used for checking the validity of the H_A, alternative hypothesis, where the expected value of time taken to say out loud the names of the colors observed in the congruent list takes less time than the incongruent list. If the alternative hypothesis is correct, then the null hypothesis will be rejected.</p>
+<p>The statistical test that I have planned to use is the dependent samples, one-tailed t-test. The two conditions are dependent on the same person carrying them out. The result for each condition has to be from the same person, or we won't get the correct average difference from each participant. Many are just better at performing both tasks than others. Some participants' slowest time could be faster than some other participants' fastest time, which means that if we mixed their results, we'd have useless, imaginary data. It may even be that some participants will perform faster with the incongruent list (that's part of what we're testing to see). The one-tailed test will be used for checking the validity of the H_A, alternative hypothesis, where the expected value of time taken to say out loud the names of the colors observed in the congruent list takes less time than the incongruent list. If the alternate hypothesis is correct, then the null hypothesis will be rejected.</p>
 
 </div>
 </div>
@@ -862,7 +862,7 @@ YZy4AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -1713,13 +1713,13 @@ xAD7HO4AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">&#39;Congruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> 
- <span class="n">data</span><span class="p">[</span><span class="s">&#39;Congruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> 
- <span class="n">data</span><span class="p">[</span><span class="s">&#39;Congruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span> 
- <span class="n">data</span><span class="p">[</span><span class="s">&#39;Congruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> 
+ <span class="n">data</span><span class="p">[</span><span class="s">&#39;Congruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="o">.</span><span class="mi">25</span><span class="p">),</span> 
+ <span class="n">data</span><span class="p">[</span><span class="s">&#39;Congruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="o">.</span><span class="mi">50</span><span class="p">),</span> 
+ <span class="n">data</span><span class="p">[</span><span class="s">&#39;Congruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="o">.</span><span class="mi">75</span><span class="p">),</span> 
  <span class="n">data</span><span class="p">[</span><span class="s">&#39;Congruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
 </pre></div>
 
@@ -1731,11 +1731,11 @@ xAD7HO4AAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left ( 8.63, \quad 8.63, \quad 14.3565, \quad 22.328, \quad 22.328\right )$$
+$$\left ( 8.63, \quad 11.89525, \quad 14.3565, \quad 16.20075, \quad 22.328\right )$$
 </div>
 
 </div>
@@ -1756,13 +1756,13 @@ $$\left ( 8.63, \quad 8.63, \quad 14.3565, \quad 22.328, \quad 22.328\right )$$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">&#39;Incongruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> 
- <span class="n">data</span><span class="p">[</span><span class="s">&#39;Incongruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> 
- <span class="n">data</span><span class="p">[</span><span class="s">&#39;Incongruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(),</span> 
- <span class="n">data</span><span class="p">[</span><span class="s">&#39;Incongruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> 
+ <span class="n">data</span><span class="p">[</span><span class="s">&#39;Incongruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="o">.</span><span class="mi">25</span><span class="p">),</span> 
+ <span class="n">data</span><span class="p">[</span><span class="s">&#39;Incongruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="o">.</span><span class="mi">50</span><span class="p">),</span> 
+ <span class="n">data</span><span class="p">[</span><span class="s">&#39;Incongruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="o">.</span><span class="mi">75</span><span class="p">),</span> 
  <span class="n">data</span><span class="p">[</span><span class="s">&#39;Incongruent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
 </pre></div>
 
@@ -1774,11 +1774,11 @@ $$\left ( 8.63, \quad 8.63, \quad 14.3565, \quad 22.328, \quad 22.328\right )$$
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$\left ( 15.687, \quad 15.687, \quad 21.0175, \quad 35.255, \quad 35.255\right )$$
+$$\left ( 15.687, \quad 18.71675, \quad 21.0175, \quad 24.0515, \quad 35.255\right )$$
 </div>
 
 </div>
@@ -2073,7 +2073,7 @@ gIO9McaMAA72xhgzAjjYG2PMCPD/ATuoM85WzZIcAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>t = t_statistic</p>
+<p>t = t_statistical</p>
 
 </div>
 </div>
@@ -2124,7 +2124,7 @@ $$8.02$$
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">t</span> <span class="o">&gt;</span> <span class="n">t_critical</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">t</span> <span class="o">&gt;</span> <span class="n">t_critical</span>                           <span class="c"># 8.02 &gt; 1.714</span>
 </pre></div>
 
 </div>
